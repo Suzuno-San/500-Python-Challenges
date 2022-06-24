@@ -1,0 +1,32 @@
+DataStructure <String>
+    ตัวแปร = "ข้อความ"
+
+    - str(input(...)) รับข้อความคีบอร์ด
+        Ex. str1 = str(input("Input String: ")) //input = "apple"
+            pirnt(str1)     //apple
+    
+    - type(...) เช็คประเภทข้อมูล
+        Ex. str1 = "apple"
+            pirnt(type(str1))   //<class 'str'>
+
+    - ตัวแปร[index0:indexn] ดึงอักขระที่ index ออกมา
+        Ex. str1 = "apple"
+            print(str1[0])     //a
+            print(str1[1:4])    //ppl
+
+    - len(...) เช็คความยาวของอักขระ
+        Ex. str1 = "apple"
+            print(len(str1))    //5
+    
+    - "ข้อความ1" in "ข้อความ2" เช็คว่า ข้อความ1 อยู่ใน ข้อความ2 หรือไม่
+        Ex. str1 = "happy"
+            str2 = "a"
+            print(str2 in str1)     //true
+
+    - ตัวแปร.replace(oldStr,newStr) เพื่อแทนที่อักขระเดิมด้วยอักขระใหม่
+        Ex. str1 = "apple"
+            print(str1.replace('a','A'))    //Apple
+
+    - ตัวแปร.split เพื่อตัดคำในสายอักขระ
+        Ex. str1 = "apple banana orange"
+            print(str1.split(' '))  //['apple','banana','orange']
