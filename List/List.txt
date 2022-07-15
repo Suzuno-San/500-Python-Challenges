@@ -1,0 +1,54 @@
+DataStructure <List>
+    ตัวแปร = [numeric,'String']
+
+    - ตัวแปร[index:index] เลือก index ถึง index ในตัวแปร
+      Ex1. list1 = [1,2,3,4]
+          print(list[0])  //1
+      Ex2. list2 = [1,2,3,4]
+          print(list2[0:2])  //[1,2]
+
+    - ตัวแปร.append('newValue') เพิ่มค่าใหม่ไปไว้ตัวสุดท้ายลงในตัวแปร
+      Ex. list1 = [1,2,3,4]
+          list1.append(5)
+          print(list1)  //[1,2,3,4,5]
+    
+    - ตัวแปร.insert(index, value) แทรกค่าไปไว้ index ที่ต้องการ
+      Ex. list1 = [1,2,3,4]
+          list1.insert(0, 0)
+          print(list1)  //[0,1,2,3,4]
+
+    - ตัวแปร.sort(...) เรียงลำดับข้อมูล
+      Ex1. list1 = [4,2,3,1]
+            list1.sort()  //[1,2,3,4]
+      Ex2. list2 = [4,2,3,1]
+            list2.sort(reverse=True)  //[4,3,2,1]
+
+    - ตัวแปร1.extend(ตัวแปร2) ให้สมาชิก ตัวแปร2 ไปต่อท้ายสมาชิก ตัวแปร1
+      Ex. list1 = [a,b,c]
+          list2 = [1,2,3]
+          list1.extend(list2)
+          print(list1)  //[a,b,c,1,2,3]
+
+    - del ตัวแปร[index] ลบสมาชิกในตัวแปรตาม index ที่เลือก
+      Ex. list1 = [1,2,3]
+          del list1[0]
+          print(list1)  //[2,3]
+
+    - ตัวแปร.remove(value) ลบสมาชิกตามที่กำหนดตัวแรก
+      Ex. list1 = [1,2,3,1,2,3]
+          list1.remove(2)
+          print(list1)  //[1,3,1,2,3]
+
+    - ตัวแปร.clear() ลบสมาชิกทุกตัว
+      Ex. list1 = [1,2,3]
+          list1.clear()
+          print(list1)  //[]
+
+    - len(ตัวแปร) หาความยาวสมาชิกตัวแปร
+      Ex. list1 = [1,2,3,4]
+          print(len(list1)) //4
+
+    - value in ตัวแปร ตรวจสอบว่า value เป็นสมาชิกของตัวแปรไหม
+      Ex. list1 = [1,2,3,4,5]
+          print(1 in list1) //True
+          print(6 in list1) //False
